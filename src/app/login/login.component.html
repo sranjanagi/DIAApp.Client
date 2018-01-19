@@ -1,0 +1,141 @@
+<form #loginForm="ngForm"  (ngSubmit)="login()">
+<div id="Container">
+    <div id="Header">
+      <!-- Header start -->
+          <img alt="Logo" src="assets/Images/Logo_White.png" style="border: 0" />
+              <span class="RegHeadStyle">Log in to Indiassetz!</span>
+      <!-- Header end -->
+    </div>
+      <div class="divline"></div>
+    <div id="MidContent">
+      <!-- Body start -->
+          <div>
+                  <table align="center" style="width: 100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                          <td align="center" style="width: 90%; vertical-align: top">
+                              <table align="center" style="width: 100%" cellspacing="0" cellpadding="0" border="0">
+                                  <tr>
+                                      <td style="height: 75px"></td>
+                                  </tr>
+                                  <tr>
+                                      <td style="text-align:  center">
+                                          <img src="assets/Images/1.png" style="border: 0; height: 75%" />
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td style="height: 10px"></td>
+                                  </tr>
+                                  <tr>
+                                      <td style="text-align: center">
+                                          <table align="center" style="width: 283px" cellspacing="0" cellpadding="0" border="0">
+                                              <tr>
+                                                  <td colspan="2" align="right" class="EmailTextBoxBg">
+                                                     
+                                                        <div class="form-group">  <input  class="RegistratonTextBox"  id="Text2" type="email" name="username" required   minlength="4" forbiddenName="bob"
+                                                      [(ngModel)]="model.username"  #username="ngModel" />
+                                                      
+                                                    <div *ngIf="username.invalid && (username.dirty || username.touched)"
+                                                    class="alert alert-danger">
+
+                                                <div *ngIf="username.errors.required">
+                                                    Name is required.
+                                                </div>
+                                                <div *ngIf="username.errors.minlength">
+                                                    Name must be at least 4 characters long.
+                                                </div>
+
+                                                        </div></div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2" style="height: 15px"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2" align="right" class="PasswordTextBoxBg">
+                                                        <div class="form-group"> <input class="RegistratonTextBox" id="password" type="password" name="password" required minlength="3"  [(ngModel)]="model.password"  #password="ngModel"/>
+                                                      
+                                                            <div *ngIf="password.invalid && (password.dirty || password.touched)"
+                                                            class="alert alert-danger">
+        
+                                                        <div *ngIf="password.errors.required">
+                                                            password is required.
+                                                        </div>
+                                                        <div *ngIf="password.errors.minlength">
+                                                            password must be at least 3 characters long.
+                                                        </div>
+        
+                                                                </div>
+                                                      
+                                                      
+                                                        </div>
+                                                 
+                                                        </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2" style="height: 30px"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <input type="image" src="assets/Images/LoginBtn.png" alt="Submit" width="283" height="44">
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2" style="height: 15px"></td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="text-align: left; width: 50%">
+                                                      <input id="Checkbox2" type="checkbox" value="Keep me logged in" />&nbsp;<span class="RegisterationTextStyle1">Keep me logged in</span>
+                                                  </td>
+                                                  <td style="width: 50%; text-align: right">
+                                                      <span class="RegisterationTextStyle2">
+                                                          <b>Forgot Password?</b></span>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2" style="height: 30px"></td>
+                                              </tr>
+                                          </table>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td style="text-align:  center">
+                                          <img src="assets/Images/OrContinueWithImg.png" style="border: 0" />
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td style="height: 5px"></td>
+                                  </tr>
+                                  <tr>
+                                      <td style="text-align: center">
+                                          <img src="assets/Images/GoogleImg2.png" style="border: 0" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                          <img src="assets/Images/FacebookImg2.png" style="border: 0" />
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td style="height: 5px"></td>
+                                  </tr>
+                                  <tr>
+                                      <td style="text-align:  center">
+                                          <img src="assets/Images/NewToIndiassetzImg.png" style="border: 0" />
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td style="height: 10px"></td>
+                                  </tr>
+                                  <tr>
+                                      <td style="text-align: center">
+                                          <input (click)="RouteRegister()" type="image" src="assets/Images/L_RegisterNowBtn.png">
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td style="height: 10px"></td>
+                                  </tr>
+                              </table>
+                          </td>
+                      </tr>
+                  </table>                                        
+          </div>                
+      <!-- Body end -->
+    </div>
+  </div>
+</form>

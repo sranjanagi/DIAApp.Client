@@ -1,0 +1,196 @@
+﻿html,body {
+	margin:0;   	padding:0;  	height:100%;
+}
+#MainBody
+{
+	margin: 0;  	padding: 0; 	width: 100%;    	background: #fff;
+	font-family: Tahoma, Trebuchet MS, Arial, Verdana;  	font-size: 11px;    	color: #000000; 	text-align: justify;    
+}
+#Container {
+	min-height:100%;    	position:relative;      width: 98%; 	margin: 0 auto;
+}
+#Header
+{
+    height: 70px;       padding: 9px;      /*border-bottom: 1px solid #c5c5c5;*/
+}
+.divline
+{   
+    padding: 10px;      border-bottom: 1px solid #c5c5c5;
+}
+
+#MidContent {
+	padding-bottom: 60px;	/* Height of the footer */      /*padding:10px;*/
+}
+.RegHeadStyle
+{
+    font-family: "futuracondensed_medium",Arial, Helvetica, sans-serif; font-weight: normal;
+    color: white;       font-size: 35px;        float: right;       padding-right: 0px;     padding-top: 25px;
+    letter-spacing: 1px;
+}
+.IntroBoxStyle
+{
+    background-color: #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.IntroBoxText
+{
+    font-family: Arial, Helvetica, sans-serif;      padding: 15px;      vertical-align: top;
+    color: white;       font-size: 12px;        text-align: justify;        line-height: 150%;
+}
+.EmailTextBoxBg
+{
+    width: 283px;       height: 43px;
+    background-image:url(../assets/Images/EmailTextBoxBg.png);
+	background-repeat:  no-repeat;      padding: 1px 2px 0 0;
+    vertical-align: top;
+}
+.RegistratonTextBox
+{
+    border-style: hidden;   width: 232px; height: 39px;
+}
+.PasswordTextBoxBg
+{
+    width: 283px;       height: 43px;       background-image:url(../assets/Images/PasswordTextBoxBg.png);
+	background-repeat:  no-repeat;          padding: 1px 2px 0 0;       vertical-align: top;
+}
+.SelectTextBoxBg
+{
+    width: 283px;       height: 43px;       background-image:url(../assets/Images/SelectBoxBg.png);
+	background-repeat:  no-repeat;          padding: 2px 2px 0 0;       vertical-align: top;
+}
+.RegistratonSelectBox
+{
+    border-style: hidden;   width: 232px; height: 39px;     background-color: #ddba50;
+}
+.RegisterationTextStyle1
+{
+    color: white;           font-family: Calibri, Arial, Tahoma;        font-size: 13px;        
+}
+.RegisterationTextStyle2
+{
+    text-align: right;           padding-right: 5px;
+    color: #0082ff;           font-family: Calibri, Arial, Tahoma;        font-size: 13px;      font-style: italic;
+}
+.RegisterationTextStyle3
+{
+    text-align: center;      color: #fff;           font-family: Calibri, Arial, Tahoma;        font-size: 20px;      font-style: italic;
+}
+#Footer {
+	position:absolute;  	bottom:0;   	width: 100%; 	height: 40px;			/* Height of the footer */  	background: #fff;
+    border-top: 1px solid #555;
+}
+.FooterText
+{
+	line-height: 120%;  	padding: 5px;      	  	color: #555; 	font-size: 16px;
+	letter-spacing: 1px;    font-family: Calibri, Arial, Trebuchet MS;          text-align: center;     
+}
+.Label1
+{
+	font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;     font-size: 12px;    	color: #000000; 	font-weight: bold;  	letter-spacing: 1px;
+}
+
+.LoginBxBg
+{
+    width: 500px;                   -webkit-border-radius: 11px;        -moz-border-radius: 11px;
+    border-radius: 11px;            border: 1px solid #00457d;      background: rgba(204,229,255,0.7);
+    -webkit-box-shadow: #B3B3B3 5px 5px 5px;                        -moz-box-shadow: #B3B3B3 5px 5px 5px;
+    box-shadow: #B3B3B3 5px 5px 5px;
+}
+
+.LoginHead {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #ffffff;
+	height:29px;
+	text-align:left;
+	border-bottom:solid 1px #2d86ca;
+	background-image:'../assets/Images/TableHeadBg3.jpg';
+	background-repeat:  repeat-x;
+	background-position: left center;
+	padding-left: 15px;
+
+
+    -webkit-border-radius: 11px 11px 0px 0px;
+    -moz-border-radius: 11px 11px 0px 0px;
+    border-radius: 11px 11px 0px 0px;
+}
+
+.loginlabelblack{
+    font-family: 'Trebuchet MS', MS Sans Serif;     font-size: 13px;     font-weight: bold;      color: #000000;
+    letter-spacing: 1px;
+}
+
+.loginlabelblue{
+    font-family: 'Trebuchet MS', MS Sans Serif;     font-size: 13px;     font-weight: bold;      color: #2851a2;    letter-spacing: 1px;
+}
+
+.Error
+{
+    font-family: 'Trebuchet MS', MS Sans Serif;     font-size: 13px;       font-variant: small-caps;       font-weight: bold;      color: Red;
+}
+
+.RedText
+{
+    font-family: 'Trebuchet MS', MS Sans Serif;     font-size: 12px;       color: Red;
+}
+.SuccessText
+{
+	font-family: Tahoma, Arial, sans-serif; 	font-size: 20px;    	color: Green;   	letter-spacing: 1px;        line-height: 150%;
+}
+.Failure
+{
+	font-family: Tahoma, Arial, sans-serif; 	font-size: 20px;        color: red; 	letter-spacing: 1px;
+}
+
+
+.ButtonStyle{
+    border:1px solid #3276C4; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; 
+    padding: 7px 15px 7px 15px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+    letter-spacing: 1px;
+    background-color: #265A96; background-image: linear-gradient(to bottom, #265A96, #2E96E6);
+}
+.ButtonStyle:hover{
+ border:1px solid #3E547D;
+ background-color: #1c426d; background-image: linear-gradient(to bottom, #1c426d, #187cc9);
+}
+.textbox
+{
+	border: 1px solid #545454;  	font-family: Tahoma, Arial, Helvetica, sans-serif;  	font-size: 12px;    	font-weight: normal;    	color: #333333;
+	padding-top: 2px;   	padding-bottom: 2px;    	height: 15px;
+}
+.dropdownlist
+{
+	border: 1px solid #666666;  	font-family: Tahoma, Arial, Helvetica, sans-serif;  	font-size: 12px;    	font-weight: normal;    	color: #333333;
+}
+
+.textarea
+{
+	border: 1px solid #545454;  	font-family: Tahoma, Arial, Helvetica, sans-serif;  	font-size: 14px;    	font-weight: normal;    	color: #333333;
+}
+.textcommentarea
+{
+	border: 1px solid #545454;  	font-family: Tahoma, Arial, Helvetica, sans-serif;      font-size: 12px;    	font-weight: normal;    	color: #333333;
+}
+.RadioBtnStyle
+{
+	font-family: Tahoma, Arial, sans-serif; 	font-size: 11px;    	color: #000000;     	font-weight: bold;  	letter-spacing: 1px;
+}
+.CheckBoxStyle
+{
+	font-family: Arial, Helvetica, sans-serif;  	font-size: 13px;        	color: red; 	font-weight: bold;  	letter-spacing: 1px;
+}
+.RegHyperLink:link
+{
+	font-family: Calibri, Arial, Tahoma;    font-size: 13px;    font-weight: bold;    	color: #0082ff; 	letter-spacing: 1px;  	text-decoration: none;
+}
+.RegHyperLink:visited
+{
+	font-family: Calibri, Arial, Tahoma;    font-size: 13px;    font-weight: bold;    	color: #0082ff; 	letter-spacing: 1px;  	text-decoration: none;
+}
+.RegHyperLink:hover
+{
+	font-family: Calibri, Arial, Tahoma;    font-size: 13px;    font-weight: bold;    	color: #990000; 	letter-spacing: 1px;  	text-decoration: none;
+}

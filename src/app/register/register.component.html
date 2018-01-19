@@ -1,0 +1,201 @@
+<form #registerForm="ngForm">
+<div id="Container">
+  <div id="Header">
+    <!-- Header start -->
+        <img alt="Logo" src="assets/Images/Logo_White.png" style="border: 0" />
+            <span class="RegHeadStyle">Welcome to Indiassetz!</span>
+    <!-- Header end -->
+  </div>
+    <div class="divline"></div>
+  <div id="MidContent">
+    <!-- Body start -->
+        <div>
+                <table align="center" style="width: 100%; height: 200px" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td style="width: 53%">
+                            <table align="center" style="width: 100%; height: 350px; padding-top: 10px;" cellpadding="0" cellspacing="20" border="0">
+                                <tr>
+                                    <td class="IntroBoxStyle">
+                                        <p class="IntroBoxText">
+                                            We are India's foremost professionally-run property management services company. Call us today to 
+                                            find out how our crack team of experts, with 80 years of collective corporate experience between them 
+                                            in property management, finance and banking, and real estate, can help you manage your real-estate 
+                                            portfolio. <br/> <br/>
+
+                                            Remember when you thought that making a decision about which house to buy was the end of your 
+                                            troubles? Remember how your joy at owning a gilt-edged real-estate investment was soon 
+                                            overwhelmed by all the legal paperwork involved in getting loans and registering your 
+                                            property, and all the headaches involved in tenanting, maintaining, and later, selling 
+                                            it? Remember how you wished there was a reliable team of professionals who understood 
+                                            both your needs and the processes involved in property management, who you could hand over 
+                                            all your problems to? <br/> <br/>
+
+                                            Well, you've just found them.  <br/> <br/>
+
+                                            At Indiassetz, 80 years of combined experience in private wealth, private banking and real 
+                                            estate management come together with the highest standards of customer service, professional 
+                                            expertise and efficiency to give you, the customer, the most seamless and stress-free 
+                                            property-buying and property-managing experience possible.
+                                            <br /><br /><br /><br /><br />
+                                            <br /><br /><br /><br />
+
+                                            <span style="text-align:center">
+                                                <input class="ButtonStyle" id="Button1" type="button" value="Know More" />
+                                            </span>
+                                            <br />
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td align="center" style="width: 47%; vertical-align: top">
+                            <!-- Angular Form Starts -->
+                            
+                          
+
+                            <div class="form-group">
+                            <table align="center" style="width: 100%" cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                    <td style="height: 75px"></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:  center">
+                                        <img src="assets/Images/1.png" style="border: 0; height: 75%" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 10px"></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center">
+                                        <table align="center" style="width: 283px" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                                <td colspan="2" align="right" class="EmailTextBoxBg">
+                                                        <div class="form-group">    <input class="RegistratonTextBox form-control" placeholder="Email" id="email" type="email" name="username" required  forbiddenName="bob"
+                                                            pattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  [(ngModel)]="model.username" #username="ngModel" />
+                                               
+                                                    <div *ngIf="username.invalid && (username.dirty || username.touched)"
+                                                    class="alert alert-danger">
+
+                                                <div *ngIf="username.errors.required">
+                                                    Email is required.
+                                                </div>
+                                                <div  *ngIf="username.errors.pattern">
+                                                    Email  format should be <i>john@doe.com</i>.
+                                                    </div>
+                                               
+                                                </div></div>
+                                               
+                                               
+                                               
+                                               
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="height: 15px"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" align="right" class="PasswordTextBoxBg">
+                                                        <div class="form-group">    <input class="RegistratonTextBox form-control"  placeholder="Password" id="password" type="password" name="password" required validateEqual="confirmPassword" reverse="true" [(ngModel)]="model.password" minlength="4" #password="ngModel"/>
+                                                        
+                                                    <div *ngIf="password.invalid && (password.dirty || password.touched)"
+                                                    class="alert alert-danger">
+
+                                                <div *ngIf="password.errors.required">
+                                                    password is required.
+                                                </div>
+                                                <div *ngIf="password.errors.minlength">
+                                                    password must be at least 4 characters long.
+                                                </div></div></div>
+
+
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="height: 15px"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" align="right" class="PasswordTextBoxBg">
+                                                        <div class="form-group">  <input class="RegistratonTextBox form-control" minlength ="4" placeholder="Retype Password" type="password" required  validateEqual="password"  reverse="false" name=”confirmPassword” id="password2"  [(ngModel)]="model.confirmPassword"  #confirmPassword="ngModel"    />
+                                                           
+                                                           
+                                                       
+                                                            <div [hidden]="confirmPassword.valid || (confirmPassword.pristine && !f.submitted)" class="alert alert-danger">
+                                                                Password mismatch
+                                                              </div>
+                                                        
+                                                       
+                                                    </div>
+                                                              
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="height: 15px"></td>
+                                            </tr>
+                                            <!--<tr>
+                                                <td colspan="2" align="right" class="SelectTextBoxBg" >
+                                                  <select class="RegistratonSelectBox form-control" id="membership" name="membership"  [(ngModel)]="model.membership" >
+                                                        <option>Select Membership</option>
+                                                        <option>Gold</option>
+                                                        <option>Silver</option>
+                                                        <option>Bronze</option>
+                                                    </select>
+                                                </td>
+                                            </tr> -->
+                                            <tr>
+                                                <td colspan="2" style="height: 20px"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                  <input type="image" class = "showCursor" value="submit" src="assets/Images/R_RegisterNowBtn.png" class = "showCursor" (click) = "register()" width="283" height="44"> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="height: 15px"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left; width: 50%">
+                                                    <input id="Checkbox2" type="checkbox" value="Terms and Condition" />&nbsp;<span class="RegisterationTextStyle1">Terms and Condition</span>
+                                                </td>
+                                                <td style="width: 50%; text-align: right">
+                                                    <span class="RegisterationTextStyle2">
+                                                        Have an account <a routerLink="/login"><b>Login</b></a></span>
+                                                </td>
+                                            </tr>                                                
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:  center">
+                                        <img src="assets/Images/RegDivLine.png" style="border: 0" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 5px"></td>
+                                </tr>
+                                <tr>
+                                    <td class="RegisterationTextStyle3">
+                                        Or
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 5px"></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center">
+                                        <img class = "showCursor" (click) = "signInWithGoogle()" src="assets/Images/RegGoogle.png" style="border: 0; height: 75%" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <img class = "showCursor" (click) = "signInWithFB()" src="assets/Images/RegFacebook.png" style="border: 0; height: 75%" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> 
+                            
+                        </td>
+                    </tr>
+                </table>                                        
+        </div>                
+    <!-- Body end -->
+  </div>
+</div>
+</form>
